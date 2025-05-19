@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-button {
+  @apply bg-yellow-500 text-white text-lg px-6 py-3 rounded-full shadow hover:bg-yellow-600 transition;
+}
+
+.action-button {
+  @apply bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600;
+}
+
+.back-button {
+  @apply absolute top-4 left-4 bg-yellow-500 text-white px-3 py-2 rounded-full shadow hover:bg-yellow-600;
+}

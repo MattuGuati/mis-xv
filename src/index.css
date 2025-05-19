@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fondo general */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65); /* Capa más oscura */
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+/* Botones */
+.main-button {
+  @apply bg-yellow-500 text-white text-lg font-semibold px-6 py-3 rounded-full mt-4 shadow-md hover:bg-yellow-600 transition-all uppercase;
+}
+
+/* Botón de volver */
+.back-button {
+  @apply fixed top-4 left-4 bg-yellow-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md z-50 hover:bg-yellow-700;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Oscurece el fondo */
+  z-index: -1;
+}
