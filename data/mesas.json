@@ -1,0 +1,18 @@
+[
+ {
+  "mesa": 1,
+  "nombre": "Juan Pérez"
+ },
+ {
+  "mesa": 1,
+  "nombre": "Ana Gómez"
+ },
+ {
+  "mesa": 2,
+  "nombre": "Pedro López"
+ },
+ {
+  "mesa": 3,
+  "nombre": "Marta Sánchez"
+ }
+]
